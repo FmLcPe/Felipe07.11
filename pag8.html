@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS</title>
+    <link rel="shortcut icon" href="img/CSS3_logo_and_wordmark.svg.png">
+    <link rel="stylesheet" href="Stype.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1 class="menu1">Felipe</h1>
+        </div>
+        <button>&#9776</button>
+        <ul class="menu2">
+            <li class="menu3">
+                <p class="menu4"><a href="index.html">Início</a></p>
+            </li>
+            <li class="menu3">
+                <p class="menu4"><a href="pag2.html">Conteúdo</a></p>
+            </li>
+            <li class="menu3">
+                <p class="menu4"><a href="pag9.html">Comunidade Surda</a></p>
+            </li>
+        </ul>
+    </nav>
+
+    <p>Esse um código CSS que define estilos para um menu de navegação em uma página web. Detalhe cada dele com CSS.</p>
+    <ul class="text5">
+        <p>body { margin: 0; }</p>
+        <li>Não acontece margem ao redor do corpo da página e removendo qualquer espaço em branco padrão.</li>
+        <p>ul { list-style: none; padding: 0; overflow: hidden; transition: all .5s; }</p>
+        <li>Remove os pontos de lista padrão de uma lista não ordenada (ul), remove o inteira (espaço) interno e oculta qualquer conteúdo que extrapole os limites da lista (overflow: hidden;). A propriedade transition especifica que qualquer transição (como animações) irá ocorrer ao longo de 0.5 segundos.</li>
+        <p>nav { background-color: black; padding: 0 20px; justify-content: space-between; align-items: center; }</p>
+        <li>Aproveitar a barra de navegação (nav), definindo a cor de fundo como preto, adicionando um espaçamento interno de 20 pixels nos lados, e alinhando os itens ao centro vertical e distribuindo espaço igualmente entre eles (justify-content: space-between; align-items: center;).</li>
+        <p>h1, p { color: aliceblue; }</p>
+        <li>Define a cor do texto de todos os elementos h1 e p tipo "aliceblue".</li>
+        <p>nav, ul { display: flex; flex-direction: row; }</p>
+        <li>Define que tanto a barra de navegação quanto a lista não ordenada e um layout de flexbox, permitindo uma instalação flexível dos elementos filhos. A direção principal é horizontal (flex-direction: row;).</li>
+        <p>li { padding: 0 20px; font-family: 'Courier New', Courier, monospace; font-size: 20px; }</p>
+        <li>Precisa o espaçamento interno do elemento de lista (li) e a fonte a ser usada como 'Courier New' ou uma fonte similar caso não esteja disponível. Define também o tamanho da fonte como 20 pixels.</li>
+        <p>h1 { margin: 0; padding: 10px; }</p>
+        <li>Remove a margem padrão e adiciona uma instalação interno de 10 pixels ao elemento h1.</li>
+        <p>button { background-color: transparent; border: none; color: aliceblue; font-size: 36px; position: absolute; right: 10px; top: 10px; display: none; }</p>
+        <li>Estiliza um botão, tornando-o transparente, sem borda, com texto na cor "aliceblue". Precisa também o tamanho da fonte como 36 pixels, o colocação absoluto no canto superior direito e inicialmente o torna invisível (display: none;).</li>
+        <p>li:hover, h1:hover, button:hover { cursor: pointer; opacity: 0.8; background-color: aliceblue; border-radius: 30px; }</p>
+        <li>Define estilos quando elementos li, h1 e button são "hovered" (quando o cursor está sobre eles). Muda o cursor para uma mãozinha, ajusta a opacidade para 0.8 (tornando um pouco mais opaco) e adiciona uma cor de fundo azul claro com um pequeno arredondamento nas bordas.</li>
+        <p>button:focus ~ ul { height: 260px; }</p>
+        <li>Define o comportamento quando o botão é focado (por exemplo, quando é clicado e depois o usuário pressiona a tecla Tab para navegar). Neste caso, ele altera a altura da lista (ul) para 260 pixels.</li>
+        <p>@media (max-width: 700px) { ... }</p>
+        <li>Precisa umas regras de estilo específicas para telas com largura máxima de 700 pixels (dispositivos móveis). Porém as regras dentro desse bloco de mídia mudam o layout e estilo do menu de navegação para uma aparência mais adequada em dispositivos móveis. Por exemplo, a direção da flexbox é alterada para column, o texto é centralizado e o menu é inicialmente oculto (height: 0).</li>
+    </ul>
+
+
+</body>
+</html>

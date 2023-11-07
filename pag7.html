@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/formulario.png">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="Stype.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1 class="menu1">Felipe</h1>
+        </div>
+        <button>&#9776</button>
+        <ul class="menu2">
+            <li class="menu3">
+                <p class="menu4">Início</p>
+            </li>
+            <li class="menu3">
+                <p class="menu4"><a href="pag2.html">Conteúdo</a></p>
+            </li>
+            <li class="menu3">
+                <p class="menu4"><a href="pag9.html">Comunidade Surda</a></p>
+            </li>
+        </ul>
+    </nav>
+    <div class="form1">
+        <h1>Formulário de Contato</h1>
+        <form class="Form2" action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+
+            <p>Nascimento (dd/mm/aaaa):
+                <input type="data" required name="dia" size="1" maxlength="2" id="dia" placeholder="dia">/
+				<input type="data" required name="mes" size="1" maxlength="2" id="mes" placeholder="mês">/
+ 				<input type="data" required name="ano" size="1" maxlength="4" id="ano" placeholder="ano">
+            </p>
+            <p>Nome da Mãe:
+            <input type="text" required name="mae" size="20" maxlength="40" id="mae" placeholder="Nome da mãe">
+            </p>
+            <p>Nome da Pai:
+                <input type="text" required name="pai" size="20" maxlength="40" id="mae" placeholder="Nome da pai">
+                </p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            
+
+            <div class="atividade">
+					<p>Escolher o curso:
+						<input type="checkbox" name="P">Programação
+						<input type="checkbox" name="mus" >Web 1
+       					<input type="checkbox" name="bal" >Web 2
+         				<input type="checkbox" name="pin" >Bancos de Dados
+            			<input type="checkbox" name="jud" >Redes de Computadores
+               		</p>
+            </div>
+            <label for="comments">Comentários:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Cometários"></textarea>
+    
+            <input type="submit" name="enviar" value="Enviar">
+        	<input type="reset" name="resetar" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

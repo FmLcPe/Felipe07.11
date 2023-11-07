@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de TV</title>
+    <script src="simuladorTV.js"></script>
+    <link rel="stylesheet" href="stype1.css">
+</head>
+<body>
+    <h1>Simulador</h1>
+    <div>
+        <button onclick="ligarDesligar()">Ligar/Desligar</button>
+        <button onclick="mudarCanal(1)">Canal +</button>
+        <button onclick="mudarCanal(-1)">Canal -</button>
+        <button onclick="aumentarVolume()">Volume +</button>
+        <button onclick="diminuirVolume()">Volume -</button>
+    </div>
+
+    <div class="text1">
+        <h2>Estado Atua:</h2>
+        <p id="status">Desligada</p>
+        <p id="canal">Canal: 0</p>
+        <p id="volume">Volume: 0</p>
+    </div>
+</body>
+</html>
